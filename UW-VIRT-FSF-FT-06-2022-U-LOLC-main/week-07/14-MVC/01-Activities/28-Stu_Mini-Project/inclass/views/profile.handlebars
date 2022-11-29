@@ -1,0 +1,17 @@
+<h1>Welcome back, {{name}}</h1>
+<h2>My Projects</h2>
+{{#each projects}}
+    <a href="/project/{{id}}">{{name}}</a>
+    <button class="del-btn" data-id="{{id}}">Delete</button>
+    <hr>
+{{/each}}
+
+<h2>Add a project</h2>
+<form action="" id="new-proj">
+    <input type="text" id="name" placeholder="name">
+    <textarea id="description" placeholder="description"></textarea>
+    <input type="text" id="funding" placeholder="needed funding">
+    <button>Create</button>
+</form>
+<script src="/js/newProject.js"></script>
+<script src="/js/delBtn.js"></script>

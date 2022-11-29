@@ -1,0 +1,10 @@
+<h1>Homepage</h1>
+<h3>All projects:</h3>
+{{#each projects}}
+<div class="card">
+    <h3><a href="/project/{{id}}">{{id}}. {{name}} by {{user.name}}</a></h3>
+    <h5>Created on: {{date_created}} needs ${{needed_funding}}.00</h5>
+    <p>{{description}}</p>
+    <hr>
+</div>
+{{/each}}
